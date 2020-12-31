@@ -30,6 +30,14 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+  #loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #464446 url("../../images/loader.gif") no-repeat center;
+    z-index: 999;
+  }
+
 body {
   background: #fde1bb; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -111,7 +119,7 @@ html {
       font-size: 11pt; } }
 
 body {
-  background-color: #fde1bb;
+  background-color: #4e4234;
   color: #444444; }
 
 body, input, select, textarea {
@@ -193,7 +201,7 @@ sub {
   top: 0.5rem; }
 
 sup {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   position: relative;
   top: -0.5rem; }
 
@@ -360,7 +368,7 @@ button,
   button.primary,
   .button.primary {
     box-shadow: none;
-    background-color: #ce1b28;
+    background-color: #C0531B;
     color: #fde1bb !important; }
     input[type="submit"].primary:hover,
     input[type="reset"].primary:hover,
@@ -615,8 +623,8 @@ dl {
     margin-left: 1.5rem; }
 
 ul.alt li {
-  border-top-color: rgba(0, 0, 0, 0.25); }
-
+  border-top-color: rgb(78 66 52); }
+  
 /* Table */
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
@@ -2211,7 +2219,7 @@ ul.icons {
 
 /* Footer */
 #footer {
-  background-color: #111111;
+  background-color: #4E4234;
   color: rgba(255, 255, 255, 0.5);
   padding: 8rem 0 6rem 0 ; }
   #footer input, #footer select, #footer textarea {
@@ -2322,8 +2330,7 @@ ul.icons {
     color: rgba(255, 255, 255, 0.4) !important; }
   #footer :-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.4) !important; }
-  #footer ul.alt li {
-    border-top-color: rgba(255, 255, 255, 0.25); }
+ 
   #footer table tbody tr {
     border-color: rgba(255, 255, 255, 0.25); }
     #footer table tbody tr:nth-child(2n + 1) {
@@ -2355,14 +2362,13 @@ ul.icons {
     display: -ms-flex;
     display: flex; }
     #footer .content section {
-      width: 25%; }
+      width: 11%; }
       #footer .content section:first-child {
-        width: 50%;
+        width: 66%;
         padding-right: 4rem; }
       #footer .content section:last-child {
-        padding-left: 4rem; }
+        padding-left: 3rem; }
   #footer .copyright {
-    border-top: 1px solid;
     font-size: 0.8rem;
     opacity: 0.5;
     padding: 2rem 0;
@@ -2694,7 +2700,7 @@ body {
 
 /* Menu */
 #menu {
-  background-color: #111111;
+  background-color: #4e4234e3;
   color: rgba(255, 255, 255, 0.5);
   -moz-transform: translateX(20rem);
   -webkit-transform: translateX(20rem);
@@ -2714,7 +2720,7 @@ body {
   right: 0;
   top: 0;
   visibility: hidden;
-  width: 20rem;
+  width: 45rem;
   z-index: 10002; }
   #menu input, #menu select, #menu textarea {
     color: #fde1bb; }
@@ -2833,16 +2839,16 @@ body {
 
 /* Menu */
 #menu2 {
-  background-color: #111111;
+  background-color: #4e4234e3;
   color: rgba(255, 255, 255, 0.5);
   -moz-transform: translateX(5rem);
   -webkit-transform: translateX(5rem);
   -ms-transform: translateX(5rem);
-  transform: translateX(5rem);
+  transform: translateX(-45rem);
   -moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
   -webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
   -ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-  transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+  transition: transform 1.2s ease, box-shadow 0.5s ease, visibility 1.0s;
   -webkit-overflow-scrolling: touch;
   box-shadow: none;
   height: 100%;
@@ -2853,7 +2859,7 @@ body {
   left: 0;
   top: 0;
   visibility: hidden;
-  width: 20rem;
+  width: 36rem;
   z-index: 10002; }
   #menu2 input, #menu2 select, #menu2 textarea {
     color: #fde1bb; }
@@ -2921,7 +2927,7 @@ body {
         padding: 0; }
         #menu2 > ul.links > li > a {
           border: 0;
-          border-top: solid 1px rgba(255, 255, 255, 0.25);
+          border-top: solid 0px rgba(255, 255, 255, 0);
           color: inherit;
           display: block;
           line-height: 3.5rem;
@@ -2938,7 +2944,7 @@ body {
     transition: color 0.2s ease-in-out;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     border: 0;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0);
     cursor: pointer;
     display: block;
     height: 3.25rem;
@@ -2949,7 +2955,7 @@ body {
     text-align: left;
     left: 0;
     top: 0;
-    vertical-align: middle;
+    vertical-align: right;
     width: 7rem; }
     #menu2 .close:before {
       -moz-osx-font-smoothing: grayscale;
@@ -2962,7 +2968,7 @@ body {
       content: '\f00d';
       font-size: 1.25rem; }
     #menu2 .close:hover {
-      color: #fde1bb; }
+      color: #fde1bb00; }
     @media screen and (max-width: 736px) {
       #menu2 .close {
         height: 4rem;
